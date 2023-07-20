@@ -1,0 +1,15 @@
+{
+  "name": "intro-section-with-dropdown-navigation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "buid-css": "tailwindcss -i ./src/main.css -o ./docs/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
