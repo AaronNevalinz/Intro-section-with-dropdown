@@ -8,18 +8,34 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <section>
-        <header>
-            <div>
+    <section class="relative w-full flex justify-between min-h-screen items-center">
+        <header class="absolute top-0 left-0 w-full">
+            <div class="w-full flex justify-between px-10 py-6 lg:px-16 lg:py-8">
                 <img src="./images/logo.svg" alt="snap-logo">
-                <ul>
-                    <li><a href="#">
-                        Features
-                        <img src="./images/icon-arrow-up.svg" alt=""> 
-                    </a></li>
-                </ul>
+                <div class="lg:hidden cursor-pointer">
+                    <img src="./images/icon-menu.svg" alt="">
+                    <img class="hidden" src="./images/icon-close-menu.svg" alt="">
+                </div>
             </div>
         </header>
+
+        <!-- hero's section -->
+        <div class="px-10 mt-[270px] lg:mt-0 lg:pl-[150px] lg:max-w-[600px]">
+            <h1 class="font-bold text-4xl lg:text-[4.2em]">Make remote work</h1>
+            <p class="text-gray-400 lg:py-10 py-6 lg:text-lg">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+            <button class="bg-black text-white lg:px-5 py-3 px-2 text-center rounded-lg lg:text-lg">Learn More</button>
+        </div>
+
+        <img class="absolute h-[40vh] lg:h-[75vh] mt-8 top-10 lg:top-37  lg:right-0 lg:pr-[150px] px-10 max-w-3xl" src="./images/image-hero-mobile.png" alt="">
+        <!-- logos -->
+        <div class="absolute bottom-10 lg:bottom-28 px-10 lg:pl-[150px]">
+            <ul class="flex gap-5">
+                <li><a href="#"><img src="./images/client-databiz.svg" alt=""></a></li>
+                <li><a href="#"><img src="./images/client-audiophile.svg" alt=""></a></li>
+                <li><a href="#"><img src="./images/client-meet.svg" alt=""></a></li>
+                <li><a href="#"><img src="./images/client-maker.svg" alt=""></a></li>
+            </ul>
+        </div>
     </section>
 </body>
 </html>
