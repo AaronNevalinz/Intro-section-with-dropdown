@@ -11,6 +11,9 @@ module.exports = {
           200: 'hsl(0, 0%, 41%)',
           300: 'hsl(0, 0%, 8%)'
         }
+      },
+      fontFamily:{
+        epilogue:['Epilogue']
       }
     },
   },
