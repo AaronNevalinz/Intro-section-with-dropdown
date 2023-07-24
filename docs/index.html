@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body class="font-sans">
-    <section class="relative">
+    <section class="relative text-primary-200">
         <header class="px-4">
                     <nav class=" w-full flex items-start justify-between md:px-8 py-5">
                         <img src="../docs/images/logo.svg" alt="">
                         <div class="absolute z-50 py-5 bg-white lg:bg-transparent pr-10 min-h-screen top-0 right-0 w-[70vw] lg:w-[80vw] lg:flex justify-between invisible lg:visible" id="navbar-menu">
                             <img src="../docs/images/icon-close-menu.svg" class="absolute right-0 mr-5 cursor-pointer lg:hidden" alt="" id="close-menu">
-                            <ul class="mt-20 lg:mt-0 lg:pl-0 pl-10 flex flex-col lg:flex-row gap-5">
+                            <ul class="mt-20 lg:mt-0 lg:pl-0 pl-10 flex flex-col lg:flex-row gap-5 ">
                                 <li>
                                     <a href="#">
-                                        <span class="flex gap-2 items-center dropdown-btn" data-dropdown="dropdown1" aria-expanded="false">
+                                        <span class="flex gap-2 items-center font-medium  hover:text-primary-300 dropdown-btn" data-dropdown="dropdown1" aria-expanded="false">
                                             Features
                                             <img src="./images/icon-arrow-down.svg" alt="">
                                         </span>
                                         <!-- dropdown menu -->
-                                        <div id="dropdown1" class="flex min-w-[230px] absolute top-[36px] dropdown">
-                                            <ul class="absolute lg:static bg-white p-2 -ml-12 left-0 shadow-lg rounded-lg" aria-labelledby="dropdownLargeButton">
+                                        <div id="dropdown1" class="min-w-[230px] lg:absolute top-[36px] dropdown hidden">
+                                            <ul class="lg:static bg-transparent lg:bg-white p-4 lg:mt-5 w-[180px] lg:-ml-24 lg:text-center lg:shadow-2xl rounded-lg" aria-labelledby="dropdownLargeButton">
                                                 <li><a href="#" class="flex gap-2 p-2 items-center"><img src="./images/icon-todo.svg" alt="">Todo List</a></li>
                                                 <li><a href="#" class="flex gap-2 p-2 items-center"><img src="./images/icon-calendar.svg" alt="">calender</a></li>
                                                 <li><a href="#" class="flex gap-2 p-2 items-center"><img src="./images/icon-reminders.svg" alt="">Reminders</a></li>
@@ -34,7 +34,7 @@
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <span class="flex items-center gap-2 dropdown-btn" data-dropdown="dropdown2" aria-expanded="false">
+                                        <span class="flex items-center gap-2 dropdown-btn font-medium hover:text-primary-300" data-dropdown="dropdown2" aria-expanded="false">
                                             Company
                                             <div>
                                                 <img src="./images/icon-arrow-down.svg" alt="">
@@ -42,7 +42,7 @@
                                             </div>
                                         </span>
                                         <div class="hidden dropdown" id="dropdown2">
-                                            <ul class="absolute bg-white p-2 left-20 ml-7 shadow-lg rounded-lg">
+                                            <ul class="lg:absolute bg-white p-2 left-20 lg:ml-7 lg:shadow-2xl rounded-lg w-[160px] lg:mt-5">
                                                 <li><a href="#" class="flex gap-2 p-2 items-center">Todo List</a></li>
                                                 <li><a href="#" class="flex gap-2 p-2 items-center">calender</a></li>
                                                 <li><a href="#" class="flex gap-2 p-2 items-center">Reminders</a></li>
@@ -50,12 +50,12 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li>Career</li>
-                                <li>About</li>
+                                <li class="font-medium hover:text-primary-300 cursor-pointer">Career</li>
+                                <li class="font-medium hover:text-primary-300 cursor-pointer">About</li>
                             </ul>
                             <ul class="pl-20 mt-5 lg:pl-0 lg:mt-0 flex flex-col lg:flex-row gap-5">
-                                <li>Login</li>
-                                <li><button class="border-black border py-2 px-4 rounded-xl -mt-2">Register</button></li>
+                                <li class="font-medium hover:text-primary-300">Login</li>
+                                <li><button class="border-black font-medium hover:text-primary-300 border py-2 px-4 rounded-xl -mt-2">Register</button></li>
                             </ul>
                         </div>
                         <img class="lg:hidden cursor-pointer" id="hamburger" src="../docs/images/icon-menu.svg" alt="">
@@ -63,38 +63,45 @@
         </header>
 
         <!-- heros section -->
-        <div class="md:grid md:place-items-center lg:px-24">
-            <div class="my-2 md:grid grid-cols-2 md:px-10 items-center gap-5 lg:gap-16  ">
-                <img class="max-h-[50vh] w-screen md:hidden text-center" src="../docs/images/image-hero-mobile.png" alt="">
-                <img class="hidden md:block w-full lg:h-[80vh]" src="../docs/images/image-hero-desktop.png" alt="">
-                <div class="text-center md:text-left my-5 py-2 md:-order-1">
-                    <h1 class="text-3xl md:text-5xl font-bold">Make remote work</h1>
-                    <p class="text-gray-400 md:my-6 lg:text-lg lg:my-5">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
-                    <p class="my-4 md:my-0 bg-black text-white font-medium text-lg py-3 px-4 inline-block rounded-lg cursor-pointer text-center">Learn More</p>
+        <div class="md:grid md:place-items-center lg:px-24 md:px-20">
+            <div class="my-2 md:grid grid-cols-2 items-center gap-5 lg:gap-16">
+                <img class="max-h-[50vh] w-screen md:hidden text-center min-w-full" src="../docs/images/image-hero-mobile.png" alt="">
+                <img class="hidden md:block w-full lg:max-h-[80vh]" src="../docs/images/image-hero-desktop.png" alt="">
+                <div class=" md:-order-1">
+                    <div class="text-center md:text-left my-5 py-2">
+                        <h1 class="text-3xl md:text-5xl lg:text-6xl md:min-w-[280px] md:max-w-[400px] font-bold text-primary-300">Make remote work</h1>
+                        <p class="text-gray-400 md:my-6 lg:text-lg lg:my-8 md:min-w-[280px] md:max-w-[400px]">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+                        <p class="my-4 md:my-0 bg-black hover:bg-transparent hover:text-primary-300 hover:border-black border text-white font-medium text-lg py-3 px-4 inline-block rounded-lg cursor-pointer text-center">Learn More</p>
+                    </div>
+
+                    <!-- clients -->
+                    <div class="px-3 lg:px-0 md:mt-10 md:min-w-[280px] md:max-w-[400px]">
+                        <ul class="flex justify-between lg:gap-4 md:justify-evenly">
+                            <li><a href="#"><img src="../docs/images/client-audiophile.svg" alt=""></a></li>
+                            <li><a href="#"><img src="../docs/images/client-databiz.svg" alt=""></a></li>
+                            <li><a href="#"><img src="../docs/images/client-maker.svg" alt=""></a></li>
+                            <li><a href="#"><img src="../docs/images/client-meet.svg" alt=""></a></li>
+                        </ul>
+                        <div class="text-center">
+                            <span class="text-xs text-gray-500 mr-4">Built by Aaron Nevalinz™️</span>
+                            <a href="https://github.com/AaronNevalinz" target="_blank" class="mr-4">
+                                <svg class="inline" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                            <a href="https://twitter.com/AaronNevalinz" target="_blank">
+                                <svg class="inline" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
+        
         </div>
 
 
 
-        <!-- clients -->
-        <div class="px-3 md:mt-10 lg:absolute lg:pl-32 lg:bottom-1">
-            <ul class="flex justify-between lg:gap-4 md:justify-evenly">
-                <li><a href="#"><img src="../docs/images/client-audiophile.svg" alt=""></a></li>
-                <li><a href="#"><img src="../docs/images/client-databiz.svg" alt=""></a></li>
-                <li><a href="#"><img src="../docs/images/client-maker.svg" alt=""></a></li>
-                <li><a href="#"><img src="../docs/images/client-meet.svg" alt=""></a></li>
-            </ul>
-            <div class="text-center">
-                <span class="text-xs text-gray-500 mr-4">Built by Aaron Nevalinz™️</span>
-                <a href="https://github.com/AaronNevalinz" target="_blank" class="mr-4">
-                    <svg class="inline" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                </a>
-                <a href="https://twitter.com/AaronNevalinz" target="_blank">
-                    <svg class="inline" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
-                </a>
-            </div>
-        </div>
+        
 
         <!-- overlay -->
         <div class="invisible w-full absolute top-0 min-h-screen bg-black opacity-50" id="overlay"></div>
