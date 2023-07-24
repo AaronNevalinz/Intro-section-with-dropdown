@@ -1,0 +1,76 @@
+# Frontend Mentor - Intro section with dropdown navigation solution by Aaron Nevalinz
+
+This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+
+
+### The challenge
+
+Users should be able to:
+
+- View the relevant dropdown menus on desktop and mobile when interacting with the navigation links
+- View the optimal layout for the content depending on their device's screen size
+- See hover states for all interactive elements on the page
+
+### Screenshots
+
+<div>
+
+Desktop Screenshot
+![Alt text](<screenshots/FireShot Capture 007 - Intro section with dropdown navigation - 127.0.0.1.png>)
+
+Relevant dropdown menus on desktop when interacting with the navigation links
+![Dropdown menu](<screenshots/FireShot Capture 011 - Intro section with dropdown navigation - 127.0.0.1.png>)
+
+Tablet screenshot
+![Alt text](<screenshots/FireShot Capture 008 - Intro section with dropdown navigation - 127.0.0.1.png>)
+
+<div style='display:flex; gap:10px; justify-content:space-between;'>
+
+<div>
+mobile version
+
+![Alt text](<screenshots/FireShot Capture 009 - Intro section with dropdown navigation - 127.0.0.1.png>)
+</div>
+<div>
+
+Interactive Relevant dropdown menus on desktop when interacting with the navigation links
+![Alt text](<screenshots/FireShot Capture 010 - Intro section with dropdown navigation - 127.0.0.1.png>)
+</div>
+
+</div>
+
+</div>
+
+### Links
+- Live Site at: [Click Me](https://your-live-site-url.com)
+
+### Built with
+
+- Semantic HTML5 markup
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [Tailwindcss](https://tailwindcss.com/) - CSS Framework
+
+
+### Useful resources
+
+- [How to Build a Responsive Navigation Bar with a Dropdown Menu using JavaScript](https://www.freecodecamp.org/news/how-to-build-a-responsive-navigation-bar-with-dropdown-menu-using-javascript/) - This helped me for development of the dropdown navigation bar. Navigation bars are essential components used a lot in websites and web apps
+
+- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+
+## Author
+
+- Frontend Mentor - [@AaronNevalinz](https://www.frontendmentor.io/profile/aaronnevalinz)
+- Twitter - [@AaronNevalinz](https://www.twitter.com/aaronnevalinz)
