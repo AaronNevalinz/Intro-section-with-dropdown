@@ -20,6 +20,7 @@ function closeDropdownMenu(){
 function toggleHamburger(){
     navMenu.classList.toggle('show');
     hamburgerBtn.setAttribute('aria-expanded', hamburgerBtn.getAttribute('aria-expanded') === 'false'?'true':'false');
+    console.log('Aaron');
 }
 
 dropdownBtn.forEach((btn)=>{
@@ -62,6 +63,7 @@ document.addEventListener('keydown', (e)=>{
         toggleHamburger();
     }
 });
+
 
 hamburgerBtn.addEventListener('click', toggleHamburger);
 
